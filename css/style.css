@@ -1,0 +1,639 @@
+/* &display=swap" */
+@import "null.css";
+
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    
+}
+.basic{
+    min-height: 100%;
+}
+
+.fon {
+    background: url('../img/road-22.jpg') top / 1920px 1780px no-repeat;
+    margin: 0 auto;
+    position: relative;
+    height: 2900px;
+    width: 1780px;
+}
+.case{
+    position: relative;
+}
+.case__tree-two {
+    background: url('../img/Derevo.png') 0 0 no-repeat;
+    position: absolute;
+    height: 1000px;
+    width: 1108px; 
+    right: 120px;
+    top: 600px;
+    transform: scale(20%);
+}
+.case__tree-three {
+    background: url('../img/Derevo.png') 0 0 no-repeat;
+    position: absolute;
+    height: 1000px;
+    width: 1108px; 
+    right: 550px;
+    top: 550px;
+    transform: scale(9%);
+}
+.case__tree-four {
+    background: url('../img/Derevo.png') 0 0 no-repeat;
+    position: absolute;
+    height: 1000px;
+    width: 1108px; 
+    right: 1100px;
+    top: 750px;
+    transform: scale(60%);
+}
+
+.case__kyst-four {
+    background: url('../img/kyst-2.png') 0 0 no-repeat;
+    position: absolute;
+    height: 1330px;
+    width: 1597px; 
+    right: -610px;
+    top: 765px;
+    transform: scale(20%);
+}
+.case__man {
+    background: url('../img/pozharnii-1.png') 0 0 no-repeat;
+    position: absolute;
+    height: 597px;
+    width: 600px; 
+    right: 1000px;
+    top: 950px;
+    
+    animation-direction: reverse;
+    animation-name: man;
+    animation-duration: 5s;
+    
+    animation-fill-mode: forwards;
+}
+/* .case__man {
+    transform: scale(0.5);
+} */
+
+@keyframes man{
+    0%{
+        opacity: 1;
+        transform: translate(15px, 150px) scale(65%);
+        
+    }
+    50%{
+        opacity: 1;
+    } 
+    100%{
+        opacity: 0;
+        transform: translate(250px, -100px) scale(35%);
+        transition-delay: 10s;
+    }
+    
+}
+.case__fire {
+    background: url('../img/flame.png') 0 0 no-repeat;
+    position: absolute;
+    height: 972px;
+    width: 1041px; 
+    right: 1100px;
+    top: 1000px;
+    transform: scale(15%);
+    animation-name: fire;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes fire{
+    0%{
+        transform: scale(10%);
+    }
+    30%{
+        transform: scale(15%);
+    }
+    40%{
+        transform: scale(17%);
+    }
+    50%{
+        transform: scale(20%);
+    }
+    68%{
+        transform: scale(20%);
+    }
+    75%{
+        transform: scale(17%);
+    }
+    80%{
+        transform: scale(13%);
+    }
+    90%{
+        transform: scale(10%);
+    }
+    100%{
+        transform: scale(0%);
+    }
+}
+.bottom{
+    position: relative;
+    top: 910px;
+    right: 60px;
+    transform: scale(16%);
+    animation-name: fire-car;
+    animation-duration: 7s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes fire-car{
+    0%{
+        transform: translate(30px, 60px) scale(16%);
+    }
+    50%{
+        transform: translate(30px, 60px) scale(40%);
+    }
+    100%{
+        transform: translate(32px, 60px) scale(65%);
+    }
+}
+
+.level__first {
+    width: 120px;
+    height: 110px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 1000px;
+    left: 900px;
+    
+}
+.level__two {
+    width: 120px;
+    height: 110px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 1000px;
+    left: 1500px;
+}
+.level__bumper {
+    width: 800px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: 980px;
+    left: 850px;
+}
+.level__item{
+    width: 860px;
+    height: 40px;
+    background-color: orangered;
+    border: 8px solid black;
+    position: absolute;
+    top: 950px;
+    left: 820px;
+}
+.level__fog-lights {
+    width: 80px;
+    height: 80px;
+    background-color: wheat;
+    border: 6px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 970px;
+    left: 990px;
+    animation-name: fog-lights;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes fog-lights{
+    0%{
+        background-color: yellow;
+        box-shadow: 0 0 20px white;
+        border: 6px solid orange;
+    }
+    50%{
+        background-color: white;
+        box-shadow: 0 0 20px white;
+        border: 6px solid black;
+    }
+    100%{
+        background-color: yellow;
+        box-shadow: 0 0 20px white;
+        border: 6px solid orange;
+    }
+}
+
+/* .whell__fog-lights:hover{
+    background-color: yellow;
+    box-shadow: 0 0 20px white;
+    border: 6px solid orange;
+}  */
+.level__lights{
+    width: 80px;
+    height: 80px;
+    background-color: wheat;
+    border: 6px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 970px;
+    left: 1450px;
+    animation-name: lights;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes lights{
+    0%{
+        background-color: red;
+        box-shadow: 0 0 20px white;
+        border: 6px solid red;
+    }
+    50%{
+        background-color: white;
+        box-shadow: 0 0 20px white;
+        border: 6px solid black;
+    }
+    100%{
+        background-color: red;
+        box-shadow: 0 0 20px white;
+        border: 6px solid red;
+    }
+}
+
+/* .whell__lights:hover{
+    background-color: yellow;
+    box-shadow: 0 0 20px white;
+    border: 6px solid red;
+} */
+.box__line{
+    width: 830px;
+    height: 110px;
+    background-color: rgb(65, 60, 60);
+    position: absolute;
+    top: 840px;
+    left: 835px;
+}
+
+.box__headlight-left {
+    width: 120px;
+    height: 70px;
+    background-color: wheat;
+    border: 6px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 870px;
+    left: 870px;
+    animation-name: headlight-left;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes headlight-left{
+    0%{
+        box-shadow: 0 0 30px white;
+    }
+    50%{
+        box-shadow: 0 0 50px white;
+    }
+    100%{
+        box-shadow: 0 0 80px white;
+    }
+}
+/* .box__headlight-left:hover{
+    box-shadow: 0 0 30px white;
+}
+.box__headlight-left:active{
+    box-shadow: 0 0 80px white;
+} */
+.box__headlight-right {
+    width: 120px;
+    height: 70px;
+    background-color: wheat;
+    border: 6px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 870px;
+    left: 1500px;
+    animation-name: headlight-right;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes headlight-right{
+    0%{
+        box-shadow: 0 0 30px white;
+    }
+    50%{
+        box-shadow: 0 0 50px white;
+    }
+    100%{
+        box-shadow: 0 0 80px white;
+    }
+}
+/* .box__headlight-right:hover{
+    box-shadow: 0 0 30px white;
+}
+.box__headlight-right:active{
+    box-shadow: 0 0 80px white;
+} */
+.box__radiator {
+    width: 475px;
+    height: 30px;
+    background-color: wheat;
+    border: 6px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 870px;
+    left: 1010px;
+}
+.box__radiator-two{
+    width: 475px;
+    height: 30px;
+    background-color: wheat;
+    border: 6px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 910px;
+    left: 1010px;
+}
+
+.block__basic {
+    width: 830px;
+    height: 510px;
+    background-color: red;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    position: absolute;
+    top: 330px;
+    left: 835px;
+}
+.block{
+    position: relative;
+    perspective: 400px;
+    transform-style: flat;
+}
+.block__windshield-left{
+    width: 350px;
+    height: 260px;
+    background-color: white;
+    border: 6px solid black;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 20;
+    top: 370px;
+    left: 880px;
+}
+.block:active .block__windshield-left{
+    transform: rotateY(5deg);
+    
+}
+.block__windshield-right {
+    width: 350px;
+    height: 260px;
+    background-color: white;
+    border: 6px solid black;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 19;
+    top: 370px;
+    left: 1280px;
+}
+.block:active .block__windshield-right{
+    transform: rotateY(5deg);
+}
+
+.left-mirror{
+    position: relative;
+    
+}
+.left-mirror__item {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 360px;
+    left: 720px;
+}
+.left-mirror__point {
+    width: 70px;
+    height: 150px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 368px;
+    left: 720px;
+}
+.left-mirror__station {
+    width: 100px;
+    height: 12px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 534px;
+    left: 715px;
+    transform: rotate(30deg);
+}
+.right-mirror{
+    position: relative;
+}
+.right-mirror__item {
+    width: 100px;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 360px;
+    left: 1680px;
+}
+.right-mirror__point {
+    width: 70px;
+    height: 150px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 368px;
+    left: 1710px;
+}
+.right-mirror__station {
+    width: 100px;
+    height: 12px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 534px;
+    left: 1685px;
+    transform: rotate(-30deg);
+}
+
+.ladder {
+    position: relative;
+}
+
+.ladder__center-one {
+    width: 80px;
+    height: 120px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 160px;
+    left: 1000px;
+}
+.ladder__center-two {
+    width: 80px;
+    height: 120px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 160px;
+    left: 1420px;
+}
+.ladder__center-three {
+    width: 400px;
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 180px;
+    left: 1050px;
+}
+.ladder__item-one {
+    width: 300px;
+    height: 25px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    left: 1100px;
+    animation-name: item-one;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item-one{
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+.ladder__item-two {
+    width: 300px;
+    height: 25px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 270px;
+    left: 1100px;
+    animation-name: item-two;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes item-two{
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+.ladder__item-three {
+    width: 80px;
+    height: 25px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 295px;
+    left: 999px;
+    transform: skew(-20deg);
+}
+.ladder__item-four {
+    width: 80px;
+    height: 25px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 295px;
+    left: 1425px;
+    transform: skew(20deg);
+}
+.ladder__item-one:hover{
+    opacity: 0;
+}
+.ladder__item-two:hover{
+    opacity: 0;
+}
+.above__signal-lights-left {
+    width: 70px;
+    height: 95px;
+    background-color: blue;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    left: 890px;
+    animation-name: signal-left;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes signal-left{
+    0%{
+        transform: scale(50%);
+    }
+    50%{
+        box-shadow: 0 0 50px blue;
+    }
+    100%{
+        transform: scale(100%); box-shadow: 0 0 80px blue;
+    }
+}
+
+/* .above__signal-lights-left:active{
+    width: 75px;
+    height: 100px;
+    box-shadow: 0 0 80px blue;
+
+} */
+.above__signal-lights-right {
+    width: 70px;
+    height: 95px;
+    background-color: blue;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    left: 1540px;
+    animation-name: signal-right;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes signal-right{
+    0%{
+        transform: scale(50%);
+    }
+    50%{
+        box-shadow: 0 0 50px blue;
+    }
+    100%{
+        transform: scale(100%); box-shadow: 0 0 80px blue;
+    }
+}
+/* .above__signal-lights-right:active{
+    width: 75px;
+    height: 100px;
+    box-shadow: 0 0 80px blue;
+
+}  */
+
+
